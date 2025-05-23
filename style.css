@@ -1,0 +1,124 @@
+/* === General Reset and Typography === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #4b0082, #8e44ad, #ffd700, #4b0082);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    overflow-x: hidden;
+}
+
+/* === Header === */
+header {
+    background-color: rgba(75, 0, 130, 0.8);
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in;
+}
+
+header h1, header p {
+    margin: 0;
+    color: gold;
+}
+
+#datetime {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+/* === Main Content === */
+main {
+    padding: 20px;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* === Services List === */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.service {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffd700;
+    padding: 15px 25px;
+    border-radius: 8px;
+    min-width: 200px;
+    text-decoration: none;
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.service:hover {
+    transform: scale(1.07);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px gold;
+    color: #fff;
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(75, 0, 130, 0.8);
+    color: gold;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* === Scroll Animation Class === */
+.animate {
+    animation: slideUp 1s ease forwards;
+}
+
+/* Optional: delay for fade-ins */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.fade-in-delay {
+    animation: fadeIn 2s ease-in;
+}
+

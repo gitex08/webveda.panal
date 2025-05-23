@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Maker</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Maker</h1>
+
+        <!-- Form for company and customer info -->
+        <div class="form-section">
+            <input type="text" id="company-name" value="WebVeda Online Services" placeholder="Company Name" required>
+            <input type="text" id="company-phone" value="9404583568" placeholder="Company Phone Number" required>
+            <input type="text" id="customer-name" placeholder="Customer Name" required>
+            <input type="text" id="customer-address" placeholder="Customer Address" required>
+        </div>
+
+        <!-- Form for item entries -->
+        <div class="form-section">
+            <input type="text" id="item-name" placeholder="Item Name" required>
+            <input type="number" id="item-price" placeholder="Item Price (₹)" required>
+            <button id="add-item-btn">Add Item</button>
+        </div>
+
+        <!-- Bill Table -->
+        <div class="bill-section">
+            <table id="bill-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price (₹)</th>
+                    </tr>
+                </thead>
+                <tbody id="item-list">
+                    <!-- Items will be listed here -->
+                </tbody>
+            </table>
+            <div class="total">
+                <p>Total: ₹<span id="total-price">0.00</span></p>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="print-section">
+            <button id="print-btn">Print Bill</button>
+        </div>
+    </div>
+
+    <script src="invoice.js"></script>
+</body>
+</html>
