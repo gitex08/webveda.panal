@@ -19,6 +19,26 @@
             z-index: 1000;
             font-family: Arial, sans-serif;
         }
+
+        /* Floating Button */
+        .floating-button {
+            position: fixed;
+            bottom: 60px;  /* Adjust this to create space from the bottom */
+            right: 10px;
+            background-color: #500075;  /* Blue background */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-button:hover {
+            background-color: #0056b3;  /* Darker blue on hover */
+        }
     </style>
 </head>
 <body>
@@ -26,7 +46,6 @@
         <h1>WebVeda Admin Panel</h1>
         <p>Online Services Centre</p>
         <div id="datetime"></div>
-        <a href="invoice.html" class="service scroll-animate.self">Invoice Maker</a>
     </header>
 
     <main>
@@ -46,11 +65,21 @@
                 <a href="https://pcs.mahaonline.gov.in/Forms/Home.aspx" class="service scroll-animate">Police Verification</a>
                 <a href="https://mahadbt.maharashtra.gov.in/Login/Login" class="service scroll-animate">Scholarship Form</a>
                 <a href="https://majhinaukri.in/current-recruitment/" class="service scroll-animate">Majhi Naukri</a>
+                <a href="https://www.npci.org.in/" class="service scroll-animate">NPCI (Bharat Adhar Seeding Enabler)</a>
+                <a href="https://www.irctc.co.in/nget/train-search" class="service scroll-animate">Ticket Booking</a>
+                <a href="https://mahabocw.in/" class="service scroll-animate">Construction Workers Registration</a>
+                <a href="https://rcms.mahafood.gov.in/indexv.aspx" class="service scroll-animate">Ration Card</a>
+                <a href="https://aaplesarkar.mahaonline.gov.in/en" class="service scroll-animate">Aapal Sarkar Seva</a>
+                <a href="https://web.umang.gov.in/landing/" class="service scroll-animate">Umang Services</a>
+                <a href="https://www.rrbapply.gov.in/#/auth/landing" class="service scroll-animate">Railway Recruitment</a>
+                <a href="https://indiapostgdsonline.gov.in/" class="service scroll-animate">India Post (GDS)</a>
+                <a href="https://citizen.mahapolice.gov.in/Citizen/MH/index.aspx" class="service scroll-animate">Maharashtra Police</a>
             </div>
         </section>
     </main>
 
-    
+    <!-- Floating Button -->
+    <button class="floating-button" onclick="window.location.href='Invoice.html';">Make Invoice</button>
 
     <div class="developer-credit">Developed by Gitesh Ahire</div>
 
