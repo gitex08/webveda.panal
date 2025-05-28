@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebVeda Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS for developer credit */
+        .developer-credit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.85em;
+            color: #555;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 4px;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
 
+        /* Floating Button */
+        .floating-button {
+            position: fixed;
+            bottom: 60px;  /* Adjust this to create space from the bottom */
+            right: 10px;
+            background-color: #500075;  /* Blue background */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-button:hover {
+            background-color: #0056b3;  /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>WebVeda Admin Panel</h1>
+        <p>Online Services Centre</p>
+        <div id="datetime"></div>
+    </header>
+
+    <main>
+        <section class="services fade-in-delay">
+            <h2>Account Opening</h2>
+            <div class="service-list">
+                <a href="https://www.unionbankofindia.co.in/en/listing/online-account-opening" class="service scroll-animate">Union Bank Of India</a>
+                <a href="https://sbi.co.in/web/yono/insta-plus-savings-bank-account" class="service scroll-animate">State Bank Of India</a>
+                <a href="https://centralbankofindia.co.in/sb-account-vkyc/view/" class="service scroll-animate">Central Bank Of India</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Button -->
+    <a href="invoice.html" class="floating-button">Create Invoice</a>
+
+    <div class="developer-credit">Developed by Gitesh Ahire</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
